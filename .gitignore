@@ -13,8 +13,12 @@
 #-------------------------------------------------------------------------------
 # This repo
 #
-# Temporary stuff I don't want in SCM
+# Temporary stuff we don't want in the repo
 no_scm
 *.tar
 *.md5
 *.lic
+
+#-------------------------------------------------------------------------------
+# Eagle stuff
+eagle-*
