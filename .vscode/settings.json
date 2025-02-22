@@ -1,0 +1,28 @@
+{
+	"cSpell.words": [
+		"dpkg",
+		"inet",
+		"libasound",
+		"libc",
+		"libcups",
+		"libfontconfig",
+		"libfreetype",
+		"libglib",
+		"libncurses",
+		"libnspr",
+		"libnss",
+		"libpulse",
+		"libstdc",
+		"libxcursor",
+		"libxi",
+		"libxrandr",
+		"libxrender",
+		"localtime",
+		"MITSHM",
+		"mrjimenez",
+		"tzdata",
+		"Xauthority",
+		"XAUTHORITY",
+		"zoneinfo"
+	]
+}
