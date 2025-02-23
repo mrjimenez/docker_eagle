@@ -25,7 +25,7 @@ docker run \
         --name docker_eagle \
         --net=host --ipc=host \
         --mac-address "$LICENSE_MAC" \
-        eagle:6.6.0
+        eagle:6.6.0.0
 
 # Useful for debugging
 #docker exec -it docker_eagle /bin/bash
