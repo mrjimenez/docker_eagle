@@ -61,7 +61,10 @@ RUN apt-get -y install libxcursor1:i386
 
 #-------------------------------------------------------------------------------
 # Install Eagle
-ARG EAGLE_DIR
+ARG EAGLE_VERSION
+ARG EAGLE_RUN_FILE
+
+ENV EAGLE_DIR=eagle-${EAGLE_VERSION}
 
 # Create the user
 RUN groupadd -g ${UID_GID} ${GUEST_USER}
@@ -71,13 +74,15 @@ RUN chown -hR ${GUEST_USER}:${GUEST_USER} ${GUEST_HOME}
 # Go to the user's home directory.
 WORKDIR ${GUEST_HOME}
 
-# Install a pre-installed version of Eagle.
-# Eagle installation requires a GUI, so either we use a pre-installed version or
-# we try to mimic the installation process to install it from a tarball.
-COPY ${EAGLE_DIR} ${EAGLE_DIR}
+# Install Eagle from the "run" file.
+COPY ${EAGLE_RUN_FILE} .
+RUN ./${EAGLE_RUN_FILE} .
+RUN rm ${EAGLE_RUN_FILE}
+
+# Fix ownership.
 RUN chown -hR ${GUEST_USER}:${GUEST_USER} ${GUEST_HOME}/${EAGLE_DIR}
 
 USER ${GUEST_USER}
 ENV HOME=${GUEST_HOME}
 SHELL ["/bin/bash", "-c"]
-CMD ${HOME}/eagle-6.6.0/bin/eagle
+CMD ${HOME}/${EAGLE_DIR}/bin/eagle

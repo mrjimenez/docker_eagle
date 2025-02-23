@@ -39,8 +39,8 @@ cd docker_eagle
 # You need a license file to have all the eagle features enabled.
 # The license will be asked on the first time you run the container.
 
-# Hard link or copy of the opened tar ball.
-cp /some/other/path/eagle-6.6.0 .
+# Hard link or copy of the eagle run file.
+cp /some/other/path/eagle-lin-6.6.0.run .
 
 # Docker image creation. Do this only once.
 ./create_image.sh

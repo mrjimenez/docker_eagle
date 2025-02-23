@@ -10,6 +10,9 @@ LICENSE_MAC=${LICENSE_MAC:-"01:ab:23:cd:45:ef"}
 XAUTHORITY="${XAUTHORITY:-${HOME}/.Xauthority}"
 #echo "$XAUTHORITY"
 
+# The Eagle version.
+EAGLE_VERSION=6.6.0
+
 # Useful flags for debugging
 #        -u 0 \
 #        --rm \
@@ -25,7 +28,7 @@ docker run \
         --name docker_eagle \
         --net=host --ipc=host \
         --mac-address "$LICENSE_MAC" \
-        eagle:6.6.0.0
+        eagle:"${EAGLE_VERSION}"
 
 # Useful for debugging
 #docker exec -it docker_eagle /bin/bash
