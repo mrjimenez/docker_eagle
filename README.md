@@ -1,6 +1,7 @@
 # Eagle docker image <!-- omit in toc -->
 
 - [1. What is this](#1-what-is-this)
+- [2. Eagle versions](#2-eagle-versions)
 - [2. How to use it](#2-how-to-use-it)
 
 ## 1. What is this
@@ -17,6 +18,16 @@ This is a docker image of the Eagle environment. It runs on an old Ubuntu 18:04 
 | "$LICENSE_MAC" | "01:ab:23:cd:45:ef"            |      |
 
 The folder `~/eagle` is used to store Xilinx configuration files in the host and in the guest systems, as normal. On the guest, the folder `/home/ubuntu/shared` gives you access to your host's home folder.
+
+## 2. Eagle versions
+
+You can find some of the old eagle versions from 6.6.0 on in the Autodesk site.
+
+[Legacy Software Versions](http://eagle.autodesk.com/eagle/software-versions)
+
+After June 7, 2026, it is unlikely anyone can find a downloadable version of the files.
+
+[Autodesk EAGLE Announcement - Next steps and FAQ](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Autodesk-EAGLE-Announcement-Next-steps-and-FAQ.html)
 
 ## 2. How to use it
 
