@@ -2,7 +2,8 @@
 
 - [1. What is this](#1-what-is-this)
 - [2. Eagle versions](#2-eagle-versions)
-- [2. How to use it](#2-how-to-use-it)
+- [3. How to use it](#3-how-to-use-it)
+- [4. TODO](#4-todo)
 
 ## 1. What is this
 
@@ -29,7 +30,7 @@ After June 7, 2026, it is unlikely anyone can find a downloadable version of the
 
 [Autodesk EAGLE Announcement - Next steps and FAQ](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Autodesk-EAGLE-Announcement-Next-steps-and-FAQ.html)
 
-## 2. How to use it
+## 3. How to use it
 
 ```bash
 # Clone the repo
@@ -53,3 +54,9 @@ cp /some/other/path/eagle-lin-6.6.0.run .
 # After that, just run this command to start ISE
 ./run_eagle.sh
 ```
+
+## 4. TODO
+
+- Try to use Alpine Linux instead of Ubuntu?
+
+[Can we run 32bit Programs on Alpine Linux?](https://unix.stackexchange.com/questions/388225/can-we-run-32bit-programs-on-alpine-linux)
