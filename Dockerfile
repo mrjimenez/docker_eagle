@@ -76,6 +76,7 @@ WORKDIR ${GUEST_HOME}
 
 # Install Eagle from the "run" file.
 COPY ${EAGLE_RUN_FILE} .
+RUN chmod +x ${EAGLE_RUN_FILE}
 RUN ./${EAGLE_RUN_FILE} .
 RUN rm ${EAGLE_RUN_FILE}
 
