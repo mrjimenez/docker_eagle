@@ -1,7 +1,16 @@
 {
 	"cSpell.words": [
+		"addgroup",
+		"adduser",
+		"Aports",
+		"ARCHS",
+		"armhf",
+		"armv",
+		"binfmt",
+		"chroots",
 		"dpkg",
 		"inet",
+		"initdb",
 		"libasound",
 		"libc",
 		"libcups",
@@ -20,9 +29,12 @@
 		"localtime",
 		"MITSHM",
 		"mrjimenez",
+		"resolv",
+		"riscv",
 		"tzdata",
 		"Xauthority",
 		"XAUTHORITY",
-		"zoneinfo"
+		"zoneinfo",
+		"zxvf"
 	]
 }
